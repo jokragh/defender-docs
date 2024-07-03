@@ -145,11 +145,11 @@ To configure Full Disk Access:
 
 1. Select **Create**.
 
-1. On the **Basics** tab, **Name** the profile. For example, `Background_Services-prod-macOS-Default-MDE`.
+1. On the **Basics** tab, **Name** the profile. For example, `Full-Disk-Access-prod-macOS-Default-MDE`.
 
 1. Select **Next**.
 
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `background_services.mobileconfig`.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `fulldisk.mobileconfig`.
 
 1. Choose a **Deployment channel** and then select **Next**.
 
@@ -219,7 +219,7 @@ To configure notifications:
 
 1. Select **Create**.
 
-1. On the **Basics** tab, **Name** the profile. For example, `BackgroundServices-prod-macOS-Default-MDE`.
+1. On the **Basics** tab, **Name** the profile. For example, `NotificationServices-prod-macOS-Default-MDE`.
 
 1. Select **Next**.
 
@@ -270,7 +270,7 @@ Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/b
    > [!CAUTION]
    > macOS 14 (Sonoma) contains new privacy enhancements. Beginning with this version, by default, applications cannot access Bluetooth without explicit consent. Microsoft Defender for Endpoint uses it if you configure Bluetooth policies for Device Control.
 
-Download [bluetooth.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/bluetooth.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) and use the same workflow as for the Accessibility settings above to enable Bluetooth access.
+Download [bluetooth.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/bluetooth.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) and use the same workflow as for the Accessibility settings above to enable Bluetooth access. Remember to use new profilename and "custom configuration profile" name.
 
 > [!NOTE]
 > Bluetooth granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Bluetooth.
